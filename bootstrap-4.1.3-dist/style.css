@@ -17,3 +17,7 @@ form .form-group input {
     margin-bottom: 15px;
 }
 
+.erro {
+    border-color: red;
+    background-color: #ffcccc;
+}
