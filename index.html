@@ -14,7 +14,46 @@
 </head>
 
 <body>
+    <div class="container">
+        <h2 class="text-center my-4">Calculadora Adipômetro</h2>
+        <form id="adipometroForm">
+            <div class="form-group">
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" class="form-control" placeholder="Digite sua idade" required>
+            </div>
+            <div class="form-group">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" class="form-control" required>
+                    <option value="">Selecione</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+            </div>
+            <!-- <div class="form-group">
+                <label for="dobraTriceps">Dobra Tríceps (mm):</label>
+                <input type="number" id="dobraTriceps" class="form-control" placeholder="Digite a medida" required>
+            </div> -->
+            <div class="form-group">
+                <label for="dobraPeitoral">Dobra Peitoral (mm):</label>
+                <input type="number" id="dobraPeitoral" class="form-control" placeholder="Digite a medida" required>
+            </div>
+            <div class="form-group">
+                <label for="dobraAbdomen">Dobra Abdômen (mm):</label>
+                <input type="number" id="dobraAbdomen" class="form-control" placeholder="Digite a medida" required>
+            </div>
+            <div class="form-group">
+                <label for="dobraCoxa">Dobra Coxa (mm):</label>
+                <input type="number" id="dobraCoxa" class="form-control" placeholder="Digite a medida" required>
+            </div>
+            <button type="button" class="btn btn-primary btn-block" onclick="calcularPercentualGordura()">Calcular</button>
+        </form>
+        <div id="resultado" class="mt-4 text-center"></div>
+    </div>
 
+    <!-- Colocar o script no final para garantir o carregamento dos elementos HTML -->
+    <script src="app.js"></script>
 </body>
+
+
 
 </html>

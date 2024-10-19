@@ -1,1 +1,19 @@
 @charset "UTF-8";
+
+h2 {
+    color: #007bff;
+}
+
+#resultado h4 {
+    color: #28a745;
+    margin-top: 20px;
+}
+
+form .form-group label {
+    font-weight: bold;
+}
+
+form .form-group input {
+    margin-bottom: 15px;
+}
+
